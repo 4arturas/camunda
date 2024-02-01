@@ -1,0 +1,23 @@
+GET http://localhost:8080/camunda/process-definitions
+
+###
+
+POST http://localhost:8080/camunda/process/my-project-process:1:b37c57a6-c0dd-11ee-8076-64c901ae1890/start
+accept: */*
+Content-Type: application/json
+
+{
+  "alertJson": "string"
+}
+
+###
+GET http://localhost:8080/camunda/tasks/active
+accept: */*
+Content-Type: application/json
+
+{
+  "alertJson": "string"
+}
+
+###
+
