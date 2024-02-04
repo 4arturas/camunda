@@ -1,0 +1,21 @@
+###
+POST http://localhost:8080/engine-rest/process-definition/key/flow/start
+Authorization: Basic demo demo
+Accept: application/json
+Content-Type: application/json
+
+{
+  "variables": {
+    "creditor": {"value":"Niall","type":"String"},
+    "amount":{"value":"100.1","type":"Double"},
+    "counter":{"value":"100","type":"Integer"},
+    "invoiceNumber":{"value":"123","type":"String"},
+    "broker": {
+      "value": "{\"name\":\"Broker Name\"}",
+      "type": "json"
+    }
+  }
+}
+
+###
+
